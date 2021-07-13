@@ -19,7 +19,9 @@ path = os.path.dirname(os.path.abspath(__file__))
 '''
     Peguei essa primeira parte desse site: https://www.viralml.com/video-content.html?v=A6nWZKZpL3k
 '''
-gmr_df = pd.read_csv(path+'\\Global_Mobility_Report.csv')
+# Se demorar mto pra carregar o csv, baixa o csv e descomenta essa linha (ps: ta com o \\ do windows)
+# gmr_df = pd.read_csv(path+'\\Global_Mobility_Report.csv')  
+gmr_df = pd.read_csv('https://www.gstatic.com/covid19/mobility/Global_Mobility_Report.csv')
 gmr_df.head()
 
 
